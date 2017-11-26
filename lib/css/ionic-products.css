@@ -1,0 +1,42 @@
+.reveal i.ionic-product {
+    position: relative;
+}
+
+.reveal i.ionic-product::before {
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    opacity: .8;
+    left: calc(50% - 40px);
+    transition: .2s opacity;
+    box-sizing: border-box;
+    top: 8px;
+    background: url(/img/ionic-product-icons.png) 0 0 no-repeat;
+}
+
+.reveal i.ionic-creator::before {
+    background-size: 100%;
+}
+
+.reveal i.ionic-view-app::before {
+    background-size: 100%;
+    background-position: 0 -32px;
+}
+
+.reveal i.ionic-deploy::before {
+    background-size: 100%;
+    background-position: 0 -64px;
+}
+
+.reveal i.ionic-package::before {
+    background-size: 100%;
+    background-position: 0 -96px;
+}
+
+.reveal i.ionic-monitor::before {
+    background-size: 100%;
+    background-position: 0 -128px;
+}

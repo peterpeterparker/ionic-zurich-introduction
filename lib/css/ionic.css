@@ -138,13 +138,16 @@ section,
     color: #fff;
 }
 
+.reveal small {
+    vertical-align: inherit;
+}
+
 /*********************************************
  * IMAGES
  *********************************************/
 
 .reveal section img {
     margin: 15px 0px;
-    border: 4px solid #333333;
     background: rgba(255, 255, 255, 0.12);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-transition: all .2s linear;
@@ -152,6 +155,10 @@ section,
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
+}
+
+.reveal section img.no-border {
+    border: none;
 }
 
 .reveal a:hover img {
