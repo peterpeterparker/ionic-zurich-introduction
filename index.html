@@ -152,12 +152,12 @@
 
 				<section>
 					<h2>From scratch to the app</h2>
-					<img src="img/ionic-diagram.png" class="no-border">
+					<img src="img/ionic-diagram.png">
 				</section>
 
 				<section>
 					<h2>Cordova architecture</h2>
-					<img src="img/cordovaapparchitecture.png" class="no-border" style="width: 60%;">
+					<img src="img/cordovaapparchitecture.png" style="width: 60%;">
 					<a href="https://cordova.apache.org/docs/en/latest/guide/overview/"><small>https://cordova.apache.org/docs/en/latest/guide/overview/</small></a>
 				</section>
 
@@ -193,7 +193,36 @@
 					</div>
 				</section>
 
+				<section>
+					<h2>DEMO</h2>
+<pre style="width: 80%; padding: 10px; font-size: 0.50em;">
+import { AlertController } from 'ionic-angular';
 
+@IonicPage()
+@Component({
+    templateUrl: 'demo.html',
+    selector: 'demo'
+})
+export class Demo {
+	constructor(private alertCtrl: AlertController) {
+	}
+
+	ionViewDidEnter() {
+		this.presentAlert();
+	}
+
+	presentAlert() {
+		let alert = this.alertCtrl.create({
+			title: 'DEMO',
+			subTitle: 'Cool?',
+			buttons: ['Cool cool cool']
+		});
+
+		alert.present();
+	}
+}
+</pre>
+				</section>
 			</div>
 		</div>
 
