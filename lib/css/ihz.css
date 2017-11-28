@@ -1,0 +1,21 @@
+.reveal.center .slides section[ihz] {
+    background-color: white;
+    padding-bottom: 0;
+}
+
+section[ihz] div.coworking_space {
+    background: url('../../img/impacthubzurich/ihz_coworking_space.png') no-repeat center center;
+    min-height: 260px;
+}
+
+section[ihz] div.coworking_offers {
+    background: url('../../img/impacthubzurich/ihz_offers.png') no-repeat center center;
+    min-height: 400px;
+}
+
+section[ihz] div.coworking_space, section[ihz] div.coworking_offers {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
